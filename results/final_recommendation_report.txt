@@ -1,0 +1,133 @@
+
+
+============================================================
+        STUDENT PERFORMANCE PREDICTION MODEL
+             FINAL RECOMMENDATION REPORT
+============================================================
+
+1. PROJECT TITLE
+Student Performance Prediction Model
+
+
+2. OBJECTIVE
+The objective of this project is to develop and compare
+machine learning models for predicting student academic
+performance.
+
+
+3. DATASET
+Dataset: UCI Student Performance Dataset
+
+Target Variable: G3
+
+G3 represents the student's final grade.
+
+
+4. MACHINE LEARNING MODELS
+
+The following regression models were trained:
+
+1. Linear Regression
+2. Decision Tree Regressor
+3. Random Forest Regressor
+
+
+5. HYPERPARAMETER TUNING
+
+GridSearchCV was applied to:
+
+- Decision Tree
+- Random Forest
+
+The best hyperparameters were selected using 5-fold
+cross-validation.
+
+
+6. EVALUATION METRICS
+
+The models were evaluated using:
+
+MAE  = Mean Absolute Error
+
+RMSE = Root Mean Squared Error
+
+R2   = R-squared
+
+
+7. TEST SET RESULTS
+
+            Model      MAE     RMSE       R2
+Linear Regression 1.646666 2.378370 0.724134
+    Decision Tree 1.439520 2.579305 0.675552
+    Random Forest 1.211785 2.028688 0.799290
+
+
+8. 5-FOLD CROSS-VALIDATION RESULTS
+
+            Model  CV_MAE_Mean  CV_MAE_STD  CV_RMSE_Mean  CV_RMSE_STD  CV_R2_Mean  CV_R2_STD
+Linear Regression     1.378296    0.164719      2.056705     0.176470    0.791629   0.042197
+    Decision Tree     1.057949    0.250222      1.875690     0.500068    0.811322   0.098246
+    Random Forest     1.026899    0.138439      1.617607     0.333754    0.866536   0.057072
+
+
+9. RECOMMENDED MODEL
+
+The model with the lowest test-set RMSE is:
+
+Random Forest
+
+
+10. BEST MODEL PERFORMANCE
+
+MAE  : 1.2118
+
+RMSE : 2.0287
+
+R2   : 0.7993
+
+
+11. INTERPRETATION
+
+MAE measures the average absolute difference between the
+actual and predicted grades.
+
+RMSE gives greater importance to larger prediction errors.
+
+R2 indicates how much variation in student final grades
+is explained by the model.
+
+Therefore, a lower MAE and RMSE are desirable, while a
+higher R2 is desirable.
+
+
+12. FEATURE IMPORTANCE
+
+Random Forest feature importance was used to identify
+the input variables that contributed most strongly to
+the prediction.
+
+The complete feature importance table is available in:
+
+results/feature_importance.csv
+
+
+13. CONCLUSION
+
+Three machine learning models were successfully trained
+and compared for student performance prediction.
+
+GridSearchCV was used for hyperparameter tuning and
+5-fold cross-validation was performed to evaluate model
+stability.
+
+Based on the test-set RMSE, the recommended model is:
+
+Random Forest
+
+The generated evaluation table and visualizations can be
+used in the final project report.
+
+
+============================================================
+END OF REPORT
+============================================================
